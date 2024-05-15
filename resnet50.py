@@ -77,18 +77,10 @@ hist = model.fit(train_generator,
                     verbose = 1,
                     validation_data = valid_generator
                     ,callbacks = [checkpointer
-                                  # , early_stopping
-                                  ]
+                  # , early_stopping]
                     )
 
-# model.save_weights("resnet_weights4(85)_nonstop.h5")
-# model.save("resnet4_nonstop.h5")
-
-# model = load_model("resnet4_nonstop.h5")
-
-# model.summary()
-# model.load_weights("resnet_weights4(85)_nonstop.h5")
-# print(model.weights)
+# model.save("resnet3.h5")
 
 result = model.evaluate(test_generator)
 
